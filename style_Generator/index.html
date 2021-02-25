@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Mon Projet</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Début du Header-->
+    <header>
+        <div class="container">
+            <h1 class="bg-primary" style="font-size: 50px; height: 70px;">Le Dom - Exo: StyleGenerator</h1>
+            <div style="height: 30px; border-bottom: solid rgb(181, 0, 236) 2px;"></div>
+        </div>
+    </header>
+    <!-- Fin du Header -->
+
+    <!-- Début du Main-->
+    <main>
+        <section class="container">
+            <div class="d-flex">
+                <!-- Début des 4 Couleurs -->
+                <div class="d-flex">
+                    <button class="couleur couleur1">
+                        <h5>W</h5>
+                    </button>
+                    <button class="couleur" style="background-color: red;">
+                        <h5>R</h5>
+                    </button>
+                    <button class="couleur" style="background-color: green;">
+                        <h5>G</h5>
+                    </button>
+                    <button class="couleur" style="background-color: rgb(92, 1, 211);">
+                        <h5>B</h5>
+                    </button>
+                </div>
+                <!-- Début des 3 borders -->
+                <div class="d-flex">
+                    <button class="rectangle" style="border: solid 5px black;">
+
+                    </button>
+                    <button class="rectangle" style="border: dashed black;">
+
+                    </button>
+                    <button class="rectangle" style="border: solid 1px black;">
+                </div>
+
+                </button>
+                <!-- Début des 3 top -->
+                <div class="d-flex">
+                    <button class="myTop">
+                        <h5>top</h5>
+                    </button>
+                    <button class="myTop bg-white" style="border-top: solid 5px red ;">
+                        <h5>top</h5>
+                    </button>
+                    <button class="myTop bg-white" style="border-top: solid 10px red;">
+                        <h5>top</h5>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Début des input -->
+        <section class="container">
+            <div class="d-flex">
+                <!-- Color Picker -->
+                <div>
+                    <input type="color" class="form-control-color ms-2" id="myInput" title="Choose your color"
+                        value="#563d7c">
+                </div>
+                <!-- Border px -->
+                <div class="d-flex">
+                    <div class="myNumInput">
+                        <input type="number" min="0" class="inputOne">
+                    </div>
+                    <div class="myNumInput">
+                        <input type="number" min="0" class="inputTwo">
+                    </div>
+                    <div class="myNumInput">
+                        <input type="number" min="0" class="inputThree">
+                    </div>
+                    <div class="myNumInput">
+                        <input type="number" min="0" class="inputFour">
+                    </div>
+                    <div class="myNumInput">
+                        <input type="number" min="0" class="inputFive">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Début des border-radius -->
+            <div class="d-flex">
+                <div class="myNumInput">
+                    <input type="number" min="0" max="50" class="roundedOne">
+                </div>
+                <div class="myNumInput">
+                    <input type="number" min="0" max="50" class="roundedTwo">
+                </div>
+                <div class="myNumInput">
+                    <input type="number" min="0" max="50" class="roundedThree">
+                </div>
+                <div class="myNumInput">
+                    <input type="number" min="0" max="50" class="roundedFour">
+                </div>
+                <div class="myNumInput">
+                    <input type="number" min="0" max="50" class="roundedFive">
+                </div>
+            </div>
+            <div class="myDiv">
+
+            </div>
+        </section>
+
+
+
+    </main>
+    <!-- Fin du Main-->
+
+    <!-- Début du Footer-->
+    <footer>
+
+    </footer>
+    <!-- Fin du Footer-->
+
+    <!-- Début du Scripts -->
+
+
+    <script type="application/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <!-- Fin du Scripts -->
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Mon Projet</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" type="text/css" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Début du Header-->
+    <header>
+        <!-- Début de la NavBar -->
+        <section class="container mt-5">
+            <div class="row">
+                <div class=" col-12 p-1 bg-primary text-white text-center">
+                    <h1>JavaScript DOM</h1>
+                </div>
+                <div class="col-12">
+                    <ul class=" d-flex list-unstyled justify-content-between mt-5 myUl text-primary">
+                        <li class="myLi1 w-25 fs-5">Exercice 1</li>
+                        <li class="myLi2 w-25 fs-5">Exercice 2</li>
+                        <li class="myLi3 w-25 fs-5">Exercice 3</li>
+                        <li class="myLi4 w-25 fs-5">Exercice 4</li>
+                    </ul>
+                    <ul class=" d-flex list-unstyled myUl text-primary">
+                        <li class="myLi5 w-25 fs-5">Exercice 5</li>
+                        <li class="myLi6 w-25 fs-5">Exercice 6</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Fin du NavBar -->
+    </header>
+    <!-- Fin du Header -->
+
+    <!-- Début du Main-->
+    <main>
+        <!-- Exercice 1 -->
+        <section class="container exo1 mt-5">
+            <div class="row p-5">
+                <h2 class="bg-primary"> Titre non modifié </h2>
+                <p>liste propritété et méthode a retrouver dans la documentation:</p>
+                <ul class="ps-5">
+                    <li>innerText</li>
+                    <li>innerHtml</li>
+                    <li>querrySelector()</li>
+                    <li>querrySelectorAll()</li>
+                    <li>style</li>
+                    <li>classList</li>
+                </ul>
+
+                <span>Changer le contenu du h2 par "le titre modifié"</span>
+                <span>changer la couleur du h2 (la couleur que vous voulez)</span>
+                <span>Ajouter une class background bootstrap au h2</span>
+            </div>
+        </section>
+
+        <!-- Exercice 2 -->
+
+        <section class="container exo2 mt-5">
+            <p class="p-5">Mettre un écouteur d'événement sur les voutons nav et changer le pannel en conséquence</p>
+        </section>
+
+        <!-- Exercice 3 -->
+
+        <section class="container exo3 mt-5 p-5">
+            <h2 class="myName">welcome inconnu</h2>
+
+            <span>écrivez dans l'input ci-dessous le nom de la personne que vous voulez accueillir</span>
+            <br>
+            <span> lorsque vous cliquez sur le bouton "go" le nom que vous avez ajouté dans l'input sera alors mis dans
+                le
+                span du h2 et l'input sera alors vide de toute contenu. Attention, interdiction de toucher à l'html
+            </span>
+
+            <form class="form">
+                <input class="input" placeholder="Ecris ton nom ici" type="text">
+                <button class="nom" type="button">go</button>
+            </form>
+        </section>
+
+        <!-- Exercice 4 -->
+        <section class="container p-5 exo4 mt-5">
+            <div class="row">
+                <h2 class="p-0">Déplacer les élements</h2>
+                <div class="col-5 bg-primary d-flex justify-content-center align-items-center div1"
+                    style="height: 200px;">
+                    <span class="carreRouge">
+
+                    </span>
+                </div>
+                <div class="col-2 text-center myElem">
+
+                </div>
+                <div class="col-5 bg-primary d-flex justify-content-center align-items-center div2">
+
+                </div>
+                <div class="text-center">
+                    <!-- Changer de place -->
+                    <button type="button" class="btn btn-warning mt-5 text-white">Change place</button>
+
+                </div>
+                <!-- Nombre de click -->
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-success">nombre de click 0</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercice 5 -->
+        <section class="container mt-5 p-3 exo5">
+            <div class="row">
+                <div>
+                    <h2>Générer des élément du DOM</h2>
+                    <p>Cliquer sur le bouton ci-dessous pour générer des oeufs</p>
+                    <button type="button" class="btn btn-success">Ajouter un oeuf</button>
+                    <div class="myImg">
+                        <img src="./assets/img/oeuf.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Exercice 6 -->
+        <section class="container mt-5 p-3 exo6">
+            <h2>Création calculatrice</h2>
+            <h3>Niveau 1</h3>
+            <div>
+                <input type="text" class="myFirstInput">
+                <button><i class="fas fa-plus"></i></button>
+                <input type="text" class="mySecondInput">
+                <button class="egal"><i class="fas fa-equals"></i></button>
+                <span id="reponse"> ?</span>
+            </div>
+            <h3>Niveau 2</h3>
+            <div class="myCalculette">
+                <div class="col-12 text-center ms-5">
+                    <span class="text-white ms-5"></span>
+                </div>
+                <div class="col-12 ms-3 p-2">
+                    <input type="text" class="inp">
+                </div>
+                <!-- Ligne 1 -->
+                <div class="col-12 d-flex mybout">
+                    <div class="col-3 w-25">
+                        <button class="num">1</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="num">2</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="num">3</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="operateur bg-primary">+</button>
+                    </div>
+                </div>
+                <!-- Ligne 2 -->
+                <div class="col-12 d-flex mybout">
+                    <div class="col-3 w-25">
+                        <button class="num">4</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="num">5</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="num">6</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="operateur bg-primary">-</button>
+                    </div>
+                </div>
+                <!-- Ligne 3 -->
+                <div class="col-12 d-flex mybout">
+                    <div class="col-3 w-25">
+                        <button class="num">7</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="num">8</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="num">9</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="operateur bg-primary">*</button>
+                    </div>
+                </div>
+                <!-- Ligne 4 -->
+                <div class="col-12 d-flex mybout">
+                    <div class="col-3 w-25">
+                        <button class="supp bg-danger">C</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="num">0</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="egale bg-success">=</button>
+                    </div>
+                    <div class="col-3 w-25">
+                        <button class="operateur bg-primary">/</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Fin du Main-->
+
+    <!-- Début du Footer-->
+    <footer>
+
+    </footer>
+    <!-- Fin du Footer-->
+
+    <!-- Début du Scripts -->
+
+
+    <script type="application/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <!-- Fin du Scripts -->
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+.myUl {
+  margin: 0px;
+  padding: 0px;
+}
+.myUl li:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.myUl2 li {
+  display: inline;
+}
+.myUl2 li:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.exo1 {
+  background: #a5a5a5;
+}
+
+.exo2 {
+  background: #a5a5a5;
+}
+
+.exo3 {
+  background: #a5a5a5;
+}
+
+.exo4 {
+  background: #a5a5a5;
+}
+.exo4 .carreRouge {
+  height: 50px;
+  width: 50px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.exo4 .myElem {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.exo5 {
+  background: #a5a5a5;
+}
+.exo5 .myImg img {
+  margin: 20px;
+  height: 50px;
+  width: 40px;
+}
+
+.exo6 {
+  background: #a5a5a5;
+}
+.exo6 .myCalculette {
+  height: 400px;
+  width: 350px;
+  background: #0d0d1f;
+}
+.exo6 .mybout {
+  margin-top: 8px;
+}
+.exo6 .mybout div {
+  border-top: 1px solid #575757;
+}
+.exo6 .mybout div button {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 15%;
+}
+
+.operateur {
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

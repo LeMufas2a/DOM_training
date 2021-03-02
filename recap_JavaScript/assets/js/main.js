@@ -8,6 +8,7 @@ let li3 = myLi[2]
 let li4 = myLi[3]
 let li5 = myLi[4]
 let li6 = myLi[5]
+let li7 = myLi[6]
 
 
 
@@ -20,6 +21,8 @@ let exo3 = document.querySelector('.exo3')
 let exo4 = document.querySelector('.exo4')
 let exo5 = document.querySelector('.exo5')
 let exo6 = document.querySelector('.exo6')
+let exo7 = document.querySelector('.exo7')
+
 
 
 
@@ -39,6 +42,7 @@ exo3.style.display = 'none'
 exo4.style.display = 'none'
 exo5.style.display = 'none'
 exo6.style.display = 'none'
+exo7.style.display = 'none'
 
 li1.addEventListener('click', () => {
     exo1.style.display = 'block'
@@ -47,7 +51,7 @@ li1.addEventListener('click', () => {
     exo4.style.display = 'none'
     exo5.style.display = 'none'
     exo6.style.display = 'none'
-
+    exo7.style.display = 'none'
 })
 
 li2.addEventListener('click', () => {
@@ -56,6 +60,7 @@ li2.addEventListener('click', () => {
     exo3.style.display = 'none'
     exo4.style.display = 'none'
     exo5.style.display = 'none'
+    exo7.style.display = 'none'
 })
 
 li3.addEventListener('click', () => {
@@ -65,6 +70,7 @@ li3.addEventListener('click', () => {
     exo4.style.display = 'none'
     exo5.style.display = 'none'
     exo6.style.display = 'none'
+    exo7.style.display = 'none'
 })
 
 li4.addEventListener('click', () => {
@@ -74,6 +80,7 @@ li4.addEventListener('click', () => {
     exo4.style.display = 'block'
     exo5.style.display = 'none'
     exo6.style.display = 'none'
+    exo7.style.display = 'none'
 })
 li5.addEventListener('click', () => {
     exo1.style.display = 'none'
@@ -82,6 +89,7 @@ li5.addEventListener('click', () => {
     exo4.style.display = 'none'
     exo5.style.display = 'block'
     exo6.style.display = 'none'
+    exo7.style.display = 'none'
 })
 
 li6.addEventListener('click', () => {
@@ -91,6 +99,17 @@ li6.addEventListener('click', () => {
     exo4.style.display = 'none'
     exo5.style.display = 'none'
     exo6.style.display = 'block'
+    exo7.style.display = 'none'
+})
+
+li7.addEventListener('click', () => {
+    exo1.style.display = 'none'
+    exo2.style.display = 'none'
+    exo3.style.display = 'none'
+    exo4.style.display = 'none'
+    exo5.style.display = 'none'
+    exo6.style.display = 'none'
+    exo7.style.display = 'block'
 })
 
 // Exercice 3 
@@ -380,6 +399,85 @@ supprimer.addEventListener('click', () => {
     t1 = t2 = op = ''
     tf = false
 })
+
+
+
+// Exercice 7 
+
+let input7 = document.getElementById('lastInput')
+let ul7 = document.querySelector('.exo7 ul')
+let myLi7 = document.querySelector('.exo7 li')
+console.log(myLi7);
+let but = document.querySelectorAll('.exo7 > div > div >  button')
+let toute = but[0]
+let complete = but[1]
+let aFaire = but[2]
+
+
+
+toute.addEventListener('click', () => {
+    let allLi = document.querySelectorAll('.exo7 li')
+    for (let i = 1; i < allLi.length; i++) {
+        allLi[i].classList.remove('d-none')
+        
+    }
+})
+
+
+complete.addEventListener('click', () => {
+    let allLi = document.querySelectorAll('.exo7 li')
+    for (let i = 1; i < allLi.length; i++) {
+        if (allLi[i].classList.contains('bg-success')) {
+            allLi[i].classList.remove('d-none')
+        } else {
+            allLi[i].classList.add('d-none')
+        }
+    }
+    
+})
+
+aFaire.addEventListener('click', () => {
+    let allLi = document.querySelectorAll('.exo7 li')
+    for (let i = 1; i < allLi.length; i++) {
+        if (allLi[i].classList.contains('bg-white')) {
+            allLi[i].classList.remove('d-none')
+        } else {
+            allLi[i].classList.add('d-none')
+        }
+    }
+    
+})
+
+input7.addEventListener('keydown', (e) => {
+    if (e.key === "Enter") {
+        addLi()
+    }
+})
+
+function addLi() {
+    let newLi = myLi7.cloneNode(true)
+    newLi.classList.remove('d-none')
+    let input = newLi.querySelector('input')
+    input.value = input7.value
+    ul7.appendChild(newLi)
+    let myBtn = newLi.querySelectorAll('button')
+    myBtn[0].addEventListener('click', () => {
+        newLi.classList.toggle('bg-white')
+        newLi.classList.toggle('bg-success')
+    });
+    myBtn[1].addEventListener('click', () => {
+        input.readOnly = false;
+    })
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            input.readOnly = true
+        }
+    })
+    myBtn[2].addEventListener('click', () => {
+        ul7.removeChild(newLi)
+    })
+}
+
 
 
 

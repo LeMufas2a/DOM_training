@@ -78,4 +78,46 @@
   border: none;
 }
 
+.exo7 {
+  background: #a5a5a5;
+}
+
+#lastInput {
+  height: 50px;
+}
+
+.mybtn1 {
+  background: #494949;
+  color: white;
+  border: 1px solid white;
+  height: 40px;
+  border: none;
+  border-radius: 20%;
+}
+
+.mybtn2 {
+  background: #03a4c0;
+  color: white;
+  border: 1px solid white;
+  height: 40px;
+  border: none;
+  border-radius: 20%;
+}
+
+.mybtn3 {
+  background: #9c07a1;
+  color: white;
+  border: 1px solid white;
+  height: 40px;
+  border: none;
+  border-radius: 20%;
+}
+
+#inputLs {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline-style: none;
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */
